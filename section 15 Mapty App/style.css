@@ -1,0 +1,8 @@
+#map {
+    height: 280px;
+    width: 50%;
+}
+
+.hidden__row,.hidden{
+     display: none
+}

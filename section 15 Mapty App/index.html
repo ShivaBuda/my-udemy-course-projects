@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mapty App</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin="" />
+
+        <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    </head>
+    <body>
+        <div class="main__container">
+            <div class="workout__list">
+                <h1 class="heading">mapty</h1>
+                <form class="workout__inputs hidden">
+                    <div class="workout__select">
+                        <label for="">Type</label>
+                        <select name="" id="" class="workout__type">
+                            <option value="running">Running</option>
+                            <option value="cycling">Cycling</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Duration</label>
+                        <input
+                            class="workout__duration"
+                            type="text"
+                            placeholder="min" />
+                    </div>
+                    <div class="distance__box">
+                        <label for="">Distance</label>
+                        <input
+                            class="workout__distance"
+                            type="text"
+                            placeholder="km" />
+                    </div>
+                    <div class="cadence__box form__row hidden__row">
+                        <label for="">Cadence</label>
+                        <input
+                            class="workout__cadence"
+                            type="text"
+                            placeholder="step/min" />
+                    </div>
+
+                    <div class="form__row elevation__box ">
+                         <label for="">Elevation Gain</label>
+                         <input
+                             class="workout__elevation"
+                             type="text"
+                             placeholder="meters" />
+                    </div>
+                    <button class="workout__btn">OK</button>
+                </form>
+                <div class="workout__summary">
+                    <h2 class="headin__2">Running on August 20</h2>
+                    <div class="workout__detail">
+                        <div>2km</div>
+                        <div>2min</div>
+                        <div>1.0min/km</div>
+                        <div>2 spm</div>
+                    </div>
+                </div>
+                <div class="workout__summary">
+                    <h2 class="headin__2">Cycling on August 20</h2>
+                    <div class="workout__detail">
+                        <div>50 km</div>
+                        <div>5 min</div>
+                        <div>10 min/km</div>
+                        <div>400 m</div>
+                    </div>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
