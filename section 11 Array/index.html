@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Bankist</title>
+    </head>
+    <body>
+        <section class="login__page">
+            <h2 class="login__heading">Log in to get started</h2>
+            <span class="material-symbols-outlined logo"> circles </span>
+            <form class="login">
+               <input class="user__input user" type="text" placeholder="USER">
+               <input class="user__input pin" type="text" name="" id="" placeholder="PIN">
+
+
+                <button class="right__arrow login">&rarr;</button>
+            </form>
+        </section>
+
+        <main class="main__page">
+            <div class="balance">
+                <div class="balance__heading">
+                    <h2 class="balance__heading">Current balance</h2>
+                    <p class="balance__date">As of 1/8/2023</p>
+                </div>
+                <div class="balance__amount">SGD 0000</div>
+            </div>
+
+            <div class="movement">
+               <div class="movement__display">
+                    <div class="movement__items">
+                         <p class="deposit">2 Deposit</p>
+                         <p class="date">3 days ago</p>
+                         <p class="ammount">SGD 300</p>
+                    </div>
+               </div>
+                
+                <div class="movement__action">
+                    <div class="transfer">
+                        <h3 class="transfer__hading">Transfer money</h3>
+                        <form class="transfer__inputs">
+                            <input type="text" class="transfer__input transfer__toAccount" />
+                            <input type="text" class=" transfer__input transfer__input-amount" />
+                            <button class="right__arrow transfer__btn">&rarr;</button>
+                        </form>
+                        <p class="transfer__text">Transfer to</p>
+                        <p class="transfer__text">Amount</p>
+                    </div>
+                    <div class="request">
+                        <h3 class="transfer__heading">Request Loan</h3>
+                        <form class="transfer__inputs loan__input">
+                            <input type="number" class="transfer__input" />
+                            <button class="right__arrow loan__btn">&rarr;</button>
+                        </form>                        <p class="transfer__text">Amount</p>
+                    </div>
+                    <div class="close">
+                        <h3 class="transfer__hading">Close account</h3>
+                        <form class="transfer__inputs">
+                            <input type="text" class="transfer__input close__user" />
+                            <input type="password" class="transfer__input close__pin" />
+                            <button class="right__arrow close__btn">&rarr;</button>
+                        </form>
+                        <p class="transfer__text">Confirm User</p>
+                        <p class="transfer__text">Confirm PIN</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="inOut">
+               <div class="inOut__box">
+                    <p class="inOut__text">IN <span class="amount__in">S$333</span></p>
+                    <p class="inOut__text">OUT <span class="amount__out">S$333</span></p>
+                    <p class="inOut__text">interest <span class="amount__interest">S$333</span></p>
+                    <button class="sort">
+                         <span>&darr;</span>
+                         <span inOut__text>sort</span>
+                    </button>
+               </div>
+               <p class="login__timer">You will be logged out in 05.00</p>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

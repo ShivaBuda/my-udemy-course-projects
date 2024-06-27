@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+html{
+     font-size: 62.5%;
+     font-weight: 300;
+
+}
+
+body{
+     font-family: 'Roboto', sans-serif;
+     padding: 5rem;
+     background-color: bisque;
+     color: #555;
+}
+
+.login__page{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 6rem;
+}
+.login{
+     display: flex;
+}
+
+.user__input{
+     width: 80px;
+}
+
+.login__heading{
+     font-weight: 400;
+}
+
+.logo{
+     font-size: 4.2rem;
+     font-weight: 300;
+}
+
+.user, .pin{
+     padding: .8rem 2rem;
+     color: inherit;
+     border: none;
+     margin-right: 1rem;
+     border-radius: .4rem;
+     outline: none;
+}
+
+.right__arrow{
+     font-size: 2rem;
+     font-weight: 600;
+     cursor: pointer;
+     background-color: azure;
+     padding: .6rem 1rem;
+     border-radius: .4rem;
+}
+
+/* main section */
+.main__page{
+     opacity: 0;
+     transition: opacity .9s ease-out;
+}
+.balance{
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 3rem;
+}
+.balance__date{
+     font-size: .8rem;
+     line-height: 2;
+}
+
+.balance__amount{
+     font-size: 2rem;
+     font-weight: 500;
+     color: #333;
+}
+
+.movement{
+     display: flex;
+     justify-content: space-between;
+}
+
+.movement__display{
+     flex: 2;
+}
+.movement__items{
+     background-color: aliceblue;
+     border-radius: .4rem;
+     display: flex;
+     justify-content: space-between;
+     padding: 1rem 2rem;
+     margin-right: 2rem;
+     margin-bottom: .2rem;
+     font-weight: 400;
+     font-size: 1.4rem;
+}
+
+.movement__action{
+     display: flex;
+     flex-direction: column;
+     flex: 1;
+}
+.transfer{
+     background-color: orange;
+
+}
+
+.transfer, .request, .close{
+     padding: 1rem 2rem;
+     border-radius: .4rem;
+     margin-bottom: 1rem;
+}
+
+.transfer__inputs{
+     display: flex;
+     align-items: center;
+}
+.transfer__input{
+     border: none;
+     outline: none;
+     margin: 1rem 1rem 1rem 0;
+     border-radius: .4rem;
+     width: 8rem;
+     font-size: 1.4rem;
+     background-color: rgb(255, 200, 99);
+     padding: 1rem;
+}
+
+.transfer__text{
+     display: inline-block;
+     margin-right: 4rem;
+}
+
+.request{
+     background-image: linear-gradient(to bottom right,rgb(169, 230, 169), green);
+}
+
+.close{
+     background-image: linear-gradient(to right bottom,rgb(201, 161, 154), tomato);
+}
+
+
+.inOut{
+     display: flex;
+     justify-content: space-between;
+     margin-top: 1rem;
+}
+
+.inOut__box{
+     display: flex;
+     justify-content: space-between;
+     flex: 1.5;
+     margin-right: 2rem;
+}
+
+.login__timer{
+     flex: 1;
+     text-align: center;
+}
+
+.inOut__text{
+     text-transform: uppercase;
+     font-size: .8rem;
+     margin-right: 1rem;
+}
+
+.amount__in,
+.amount__interest{
+     color: green;
+     margin-left: .6rem;
+     font-size: 1.4rem;
+     font-weight: 500;
+}
+.amount__out{
+     color: rgb(160, 57, 38);
+     font-size: 1.6rem;
+     margin-left: .6rem;
+}
+
+.sort{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     text-transform: uppercase;
+     font-size: .8rem;
+     font-weight: 500;
+     cursor: pointer;
+}
+
+
+

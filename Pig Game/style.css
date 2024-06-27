@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main__container {
+    background-image: linear-gradient(to bottom right, #753682, #bf2e34);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.player__boxes {
+    display: flex;
+    text-align: center;
+}
+
+.btn__wrapper{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     display: flex;
+     flex-direction: column;
+}
+
+.player__box {
+    width: 400px;
+    height: 300px;
+    padding: 4rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    background-color: #be7086;
+}
+
+.player__box-0 {
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+
+.player__box-1 {
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+.playerActive {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.winning__player {
+    background-color: #555;
+}
+
+.heading {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.score {
+    font-size: 4.2rem;
+    color: #753682;
+    margin-top: 2rem;
+}
+.score__current-box {
+    margin: auto;
+    background-color: #970c34;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+    width: 120px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-top: 6rem;
+}
+
+.text {
+    font-size: 1rem;
+}
+
+.score__current {
+    font-size: 1.8rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: white;
+    text-transform: uppercase;
+    color: #555;
+    /* position: absolute;
+    left: 43%; */
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.dice__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+    margin: 4.5rem auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.hold__btn{
+     margin-top: 1rem;
+}
+
+.roll__btn{
+     margin-top: 1rem;
+}
