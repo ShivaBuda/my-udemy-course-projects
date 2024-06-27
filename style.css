@@ -1,0 +1,67 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+html{
+     font-size: 62.5%;
+}
+body{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: #444;
+}
+
+.main__container{
+     background-image: linear-gradient(to right bottom, rgb(134, 208, 100), rgb(39, 128, 39));
+     height: 100vh;
+     text-align: center;
+}
+
+.modal__overlay{
+     background-color: rgba(0, 0, 0, 0.8);
+     height: 100vh;
+     width: 100vw;
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.hidden{
+     display: none
+}
+
+.modal{
+     position: relative;
+     width: 30vw;
+     background-color: azure;
+     padding: 2rem;
+}
+.heading{
+     font-size: 2rem;
+     margin-bottom: 1rem;
+}
+
+.modal__close{
+     font-size: 2.8rem;
+     position: absolute;
+     top: .4rem;
+     right: 2rem;
+     cursor: pointer;
+}
+.text{
+     font-size: 1.4rem;
+}
+
+.modal__btn{
+     padding: 1rem 2rem;
+     font-size: 1.6rem;
+     cursor: pointer;
+     font-family: inherit;
+        margin-top: 10rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+}
+.modal__btn:not(:last-child){
+     margin-right: 2rem;
+}
