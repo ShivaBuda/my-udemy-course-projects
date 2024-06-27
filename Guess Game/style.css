@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;600;700;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Handjet", cursive;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.main__container {
+    background-color: black;
+    height: 100vh;
+    color: white;
+    padding: 3rem 10rem;
+}
+
+.btn__container {
+    display: flex;
+    justify-content: space-around;
+}
+.btn {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    color: #333;
+}
+
+.text {
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.heading{
+     font-size: 6.2rem;
+     text-align: center;
+     margin: 4.2rem 0;
+}
+
+.display{
+     margin: auto;
+     width: 12rem;
+     height: 10rem;
+     background-color: white;
+     font-size: 6.2rem;
+     color: black;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.input-btn__box{
+     display: flex;
+     flex-direction: column;
+}
+
+.input__num{
+     height: 6.2rem;
+     width: 20rem;
+     margin-bottom: 2rem;
+     font-size: 3.2rem;
+     padding: 1rem;
+     color: #555;
+     text-align: center;
+     font-family: inherit;
+}
+
+.input__container{
+     display: flex;
+     justify-content: space-around;
+     margin-top: 1rem;
+}

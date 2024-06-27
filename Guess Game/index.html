@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Guess Game 2</title>
+    </head>
+    <body>
+        <div class="main__container">
+            <div class="btn__container">
+                <input type="button" class="js-play__btn btn" value="Reset" />
+                <p class="text">(Guess between 1 and 20)</p>
+            </div>
+            <h1 class="heading">Guess the number!</h1>
+            <p class="js-display__result display">?</p>
+            <div class="input__container">
+               <div class="input-btn__box">
+                    <input type="number" class="js-input__num input__num" min="1"  max="20" step="1"/>
+                    <input class="js-check__btn btn" type="button" value="Check" />
+               </div>
+                <div class="score">
+                    <p class="js-guess text">Start guessing</p>
+                    <p class="js-score__text text">Score: 20</p>
+                    <p class="js-score__highest text">Highest score: 0</p>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
